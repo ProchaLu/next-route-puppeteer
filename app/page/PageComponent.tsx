@@ -1,11 +1,17 @@
 'use client';
 
-// make timeout 2s so the Loading component is shown
+import Image from 'next/image';
+
 function delay() {
   return new Promise((res) => setTimeout(res, 2000));
 }
-// create a component that will be rendered after the timeout
+
 export default async function PageComponent() {
   await delay();
-  return <h2>Page Component</h2>;
+  return (
+    <div>
+      <h2>Page Component</h2>
+      <Image src="/images/image.jpg" alt="image" width={300} height={300} />
+    </div>
+  );
 }
