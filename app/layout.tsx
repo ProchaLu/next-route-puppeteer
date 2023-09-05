@@ -15,7 +15,8 @@ export default function RootLayout({
       <body>
         <nav>
           <div>
-            <Link href="/">home</Link> <Link href="/page">page</Link>
+            <Link href="/">home</Link> <Link href="/page">page</Link>{' '}
+            <Link href="/cookie">cookie</Link>
           </div>
         </nav>
         {children}
